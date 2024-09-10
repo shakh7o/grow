@@ -1,0 +1,506 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+:root {
+    --DMSB700: 'DMSansB';
+    --DMSR400: 'DMSansR';
+    --MLWR400: 'Mulish';
+}
+
+.btn {
+    font-family: var(--DMSB700);
+    font-size: 17px;
+    line-height: 22px;
+    color: #ffffff;
+
+    padding: 20px 60px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header start */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header__nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 50px;
+}
+
+.header__nav-link {
+    font-family: var(--DMSB700);
+    font-size: 15px;
+    line-height: 20px;
+    color: #696871;
+    transition: .3s;
+    position: relative;
+}
+
+.header__nav-link::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #5454D4;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+}
+
+.header__nav-link:hover::after {
+    width: 100%;
+}
+
+.header__nav-link:hover {
+    color: #19191B;
+}
+
+.header__nav-btn {
+    background: #FF7143;
+}
+
+.header__nav-bar {
+    font-size: 35px;
+    color: black;
+    display: none;  
+}
+
+.header__content {
+    flex-grow: 1;
+    padding: 100px 0;
+}
+
+.header__content-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__content-title {
+    font-family: var(--DMSB700);
+    font-size: 80px;
+    line-height: 77px;
+    color: #19191B;
+}
+
+.header__content-text {
+    font-family: var(--MLWR400);
+    font-size: 20px;
+    line-height: 30px;
+    color: #696871;
+    margin: 30px 0 50px 0;
+    max-width: 460px;
+    width: 100%;
+}
+
+.header__content-button {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__content-btn {
+    background: #5454D4;
+    transition: .3s;
+}
+
+.header__content-link {
+    border: 1px solid #E7E7E7;
+    border-radius: 50%;
+    padding: 20px 24px;
+}
+
+.header__content-link i {
+    font-size: 25px;
+    color: #19191B;
+}
+
+/* main start */
+
+.main__brends-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.main__content-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 160px;
+}
+
+.main__content-title {
+    font-family: var(--DMSB700);
+    font-size: 50px;
+    line-height: 57px;
+}
+
+.main__content-text {
+    font-family: var(--MLWR400);
+    font-size: 20px;
+    line-height: 30px;
+    color: #696871;
+    margin: 30px 0;
+    max-width: 460px;
+    width: 100%;
+}
+
+.main__content-link {
+    font-family: var(--DMSB700);
+    font-size: 17px;
+    line-height: 22px;
+    color: #5454D4;
+}
+
+.main__audit-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 138px 0 150px 0;
+}
+
+.main__audit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+}
+
+.main__audit-item img {
+    width: 151px;
+}
+
+.main__audit-title {
+    font-family: var(--DMSB700);
+    font-size: 24px;
+    line-height: 36px;
+    color: #19191B;
+    margin: 7px 0 20px 0;
+}
+
+.main__audit-text {
+    font-family: var(--MLWR400);
+    line-height: 24px;
+    color: #696871;
+    max-width: 320px;
+    width: 100%;
+}
+
+/* main end */
+/* **************** */
+
+/* footer start */
+
+.footer__content-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__content-title {
+    font-family: var(--DMSB700);
+    font-size: 60px;
+    line-height: 70px;
+    color: #000;
+    max-width: 600px;
+    width: 100%;
+}
+
+.footer__content-btn {
+    background: #F7F7FB;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.footer__content-button {
+    padding: 18px 30px;
+    background: #F7F7FB;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footer__content-secondButton {
+    padding: 18px 30px;
+    background: #F7F7FB;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footer__content-button:hover {
+    background: #5454D4;
+    color: white;
+}
+
+.footer__content-secondButton:hover {
+    background: #5454D4;
+    color: white;
+}
+
+.footer__plan {
+    padding: 82px 0 120px 0;
+}
+
+.footer__plan-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__plan-items {
+    display: inline-block;
+    text-align: center;
+    padding: 40px;
+    background: #F8F8F8;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.footer__plan-items:hover {
+    background: #FF7143;
+    box-shadow: 0px 32px 34px 0px #FF703B51;
+    transform: scale(1.1);
+}
+
+.footer__plan-items:hover .footer__plan-premium {
+    color: white;
+}
+
+.footer__plan-items:hover .footer__plan-title {
+    color: white;
+}
+
+.footer__plan-items:hover .footer__plan-text {
+    color: white;
+}
+
+.footer__plan-items:hover .footer__plan-btn {
+    color: white;
+    background: #9F3919;
+    border: none;
+}
+
+.footer__plan-premium {
+    font-family: var(--DMSR400);
+    font-size: 18px;
+    line-height: 28px;
+    color: #696871;
+}
+
+.footer__plan-title {
+    font-family: var(--DMSB700);
+    font-size: 60px;
+    line-height: 56px;
+    color: #1D293F;
+    margin: 22px 0 28px 0;
+}
+
+.footer__plan-title span {
+    font-family: var(--DMSR400);
+    font-size: 28px;
+    line-height: 56px;
+
+}
+
+.footer__plan-text {
+    font-family: var(--MLWR400);
+    font-size: 17px;
+    line-height: 50px;
+    color: #696871;
+}
+
+.footer__plan-btn {
+    padding: 19px 92px;
+    border: 1px solid #EAE9F2;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    margin-top: 34px;
+    color: #5454D4;
+}
+
+/* footer end */
+/* ******************* */
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 992px;
+    }
+
+    .header__nav-content {
+        padding: 30px 20px 0 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 786px;
+    }
+
+    .header__nav-list {
+        display: none;
+    }
+
+    .header__nav-btn {
+        display: none;
+    }
+
+    .header__content-content  {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header__content-image {
+        display: none;
+    }
+
+    .header__content-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__brends-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .main__content-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .header__nav-bar {
+        display: block;
+    }
+
+    .main__audit-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .footer__content-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer__content-btn {
+        display: none;
+    }
+
+    .footer__plan-price {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 568px;
+    }
+
+    .header__content-title {
+        font-size: 50px;
+        line-height: 60px;
+        max-width: 400px;
+    }
+    
+    .header__content-text {
+        max-width: 380px;
+        width: 100%;
+    }
+
+    .main__brends-logo {
+        display: none;
+    }
+
+    .main__content-content img {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .main__content-title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .main__content-text {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .footer__content-title {
+        font-size: 40px;
+        line-height: 55px;
+        max-width: 275px;
+        width: 100%;
+    }
+
+    .footer__content-btn {
+        display: block;
+    }
+
+}
+
+@media (max-width: 568px) {
+    .container {
+        width: 90%;
+    }
+
+    .main__audit-text {
+        max-width: 240px;
+        width: 100%;
+    }
+
+}
